@@ -76,4 +76,16 @@ git clone https://github.com/maykonscheffer/scheffers-bike.git
 
 ---
 
-Projeto desenvolvido para fins acadêmicos e como parte do meu portfólio de desenvolvimento web.
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto foram aplicados conceitos como:
+
+- Estruturação semântica com HTML5;
+- Estilização responsiva utilizando CSS3 e Bootstrap;
+- Manipulação do DOM com JavaScript;
+- Consumo de API utilizando Fetch API (ViaCEP);
+- Versionamento de código com Git e GitHub.
+
+---
+
+Este projeto foi desenvolvido como atividade prática da formação Full Stack +praTi e também integra meu portfólio como desenvolvedor em formação.
