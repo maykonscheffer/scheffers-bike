@@ -6,6 +6,12 @@ O projeto foi desenvolvido como atividade prática utilizando HTML, CSS, JavaScr
 
 ---
 
+## 🌐 Demonstração
+
+**Acesse o projeto:** https://maykonscheffer.github.io/scheffers-bike/
+
+---
+
 ## 📸 Preview
 
 ![Preview do projeto](preview.png)
