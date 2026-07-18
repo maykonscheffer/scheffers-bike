@@ -1,0 +1,921 @@
+/* RESET */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+
+}
+
+
+.container {
+
+    max-width: 1300px;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+img {
+
+    max-width: 100%;
+    display: block;
+
+}
+
+
+
+/* MENU SUPERIOR */
+
+.menu {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(10,10,10,.90);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+}
+
+
+.logo {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: white !important;
+
+    letter-spacing: 4px;
+
+}
+
+
+.nav-link {
+
+    color: white !important;
+
+    margin-left: 25px;
+
+    letter-spacing: 1px;
+
+    transition: .3s;
+
+}
+
+
+.nav-link:hover {
+
+    color: #d32f2f !important;
+
+}
+
+
+.btn-danger {
+
+    background: #d32f2f;
+
+    border: none;
+
+    padding: 10px 24px;
+
+    transition: .3s;
+
+}
+
+.btn-enviado {
+
+    background: #2e7d32 !important;
+
+}
+
+
+.btn-danger:hover {
+
+    background: #ff4040;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    height: 100vh;
+
+    background-image: url("../img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+
+        to right,
+
+        rgba(0,0,0,.85),
+
+        rgba(0,0,0,.45)
+
+    );
+
+}
+
+
+.hero .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+
+.mini-title {
+
+    color: #d32f2f;
+
+    letter-spacing: 6px;
+
+    font-size: .85rem;
+
+    text-transform: uppercase;
+
+}
+
+
+.hero h1 {
+
+    font-size: 6rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    margin: 20px 0;
+
+}
+
+
+.hero h1 span {
+
+    color: #d32f2f;
+
+}
+
+
+.subtitle {
+
+    font-size: 1.4rem;
+
+    letter-spacing: 5px;
+
+    color: #dddddd;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+
+.description {
+
+    font-size: 1.1rem;
+
+    color: #cfcfcf;
+
+    max-width: 600px;
+
+}
+
+
+.hero-buttons {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.btn-outline-light {
+
+    border: 1px solid white;
+
+    transition: .3s;
+
+}
+
+
+.btn-outline-light:hover {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+
+/* TÍTULOS */
+
+.hero h1,
+.services h2,
+.service-info h3,
+.about h2,
+.contact h2 {
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+}
+
+
+.services h2 {
+
+    font-size: 4rem;
+
+}
+
+
+.service-info h3 {
+
+    font-size: 3rem;
+
+}
+
+
+.about h2 {
+
+    font-size: 4rem;
+
+}
+
+
+.contact h2 {
+
+    font-size: 4rem;
+
+}
+
+
+.title-red {
+
+    color: #d32f2f;
+
+    font: inherit;
+
+}
+
+
+
+/* SERVIÇOS */
+
+.services {
+
+    padding: 120px 0;
+
+    background: #111;
+
+}
+
+
+.section-text {
+
+    color: #999;
+
+    margin-bottom: 60px;
+
+}
+
+
+.service {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    margin-bottom: 70px;
+
+    background: #181818;
+
+    overflow: hidden;
+
+    transition: .35s ease;
+
+    border: 1px solid transparent;
+
+}
+
+
+.service:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #d32f2f;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+
+}
+
+
+.service.reverse {
+
+    flex-direction: row-reverse;
+
+}
+
+
+.service img {
+
+    width: 50%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: transform .6s ease;
+
+}
+
+
+.service:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+.service-info {
+
+    width: 50%;
+
+    padding: 50px;
+
+}
+
+
+/* Categoria do serviço */
+
+.service-info > span {
+
+    color: #d32f2f;
+
+    letter-spacing: 4px;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+}
+
+
+.service-info p {
+
+    color: #cfcfcf;
+
+    font-size: 1.25rem;
+
+    line-height: 1.9;
+
+    font-weight: 400;
+
+}
+
+
+
+/* MARCAS */
+
+.brands {
+
+    background: #0d0d0d;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    padding: 18px 0;
+
+    overflow: hidden;
+
+}
+
+
+.brands p {
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    width: 100%;
+
+    color: #d6d6d6;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.brands p span {
+
+    color: #d32f2f;
+
+}
+
+/* CONTATO */
+
+.contact {
+
+    padding: 120px 0;
+
+    background: #111;
+
+}
+
+
+.contact h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.contact form .row {
+
+    row-gap: 25px;
+
+}
+
+
+.contact .form-control,
+.contact .form-select {
+
+    background: #181818;
+
+    border: 1px solid #333;
+
+    color: #fff;
+
+    padding: 15px 18px;
+
+    height: 58px;
+
+    border-radius: 4px;
+
+    transition: .3s;
+
+}
+
+
+.contact textarea.form-control {
+
+    height: 170px;
+
+    resize: none;
+
+}
+
+
+.contact .form-control::placeholder {
+
+    color: #888;
+
+}
+
+
+.contact .form-control:focus,
+.contact .form-select:focus {
+
+    background: #1f1f1f;
+
+    color: #fff;
+
+    border-color: #d32f2f;
+
+    box-shadow: 0 0 15px rgba(211,47,47,.25);
+
+}
+
+
+.contact button {
+
+    margin-top: 15px;
+
+    padding: 14px 40px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* INFORMAÇÕES DA OFICINA */
+
+.contact-info {
+
+    padding-right: 50px;
+
+}
+
+
+.contact-text {
+
+    color: #bdbdbd;
+
+    margin: 30px 0 45px;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+
+}
+
+
+.info-item {
+
+    border-left: 3px solid #d32f2f;
+
+    padding-left: 18px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.info-item h5 {
+
+    color: #d32f2f;
+
+    font-size: .85rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+}
+
+
+.info-item p {
+
+    color: #d7d7d7;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+
+
+/* REDES SOCIAIS */
+
+.social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    margin: 20px 0;
+
+}
+
+
+.social a {
+
+    color: #ffffff;
+
+    font-size: 1.6rem;
+
+    transition: .3s;
+
+}
+
+
+.social a:hover {
+
+    color: #d32f2f;
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/* RODAPÉ */
+
+footer {
+
+    background: #0b0b0b;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    padding: 45px 0;
+
+    margin-top: 80px;
+
+}
+
+
+.footer-content {
+
+    text-align: center;
+
+}
+
+
+.footer-content h3 {
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 2rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.footer-subtitle {
+
+    color: #888;
+
+    font-size: .9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+}
+
+
+.copyright {
+
+    color: #777;
+
+    font-size: .9rem;
+
+    margin-top: 25px;
+
+}
+
+
+
+/* TOAST DE SUCESSO */
+
+.toast-msg {
+
+    position: fixed;
+
+    top: 30px;
+
+    right: 30px;
+
+    background: rgba(20,20,20,.88);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-left: 5px solid #28a745;
+
+    color: #fff;
+
+    padding: 20px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.35);
+
+    transform: translateX(420px);
+
+    opacity: 0;
+
+    transition: .45s;
+
+    z-index: 99999;
+
+    max-width: 360px;
+
+}
+
+
+.toast-msg.show {
+
+    transform: translateX(0);
+
+    opacity: 1;
+
+}
+
+
+.toast-msg i {
+
+    font-size: 2rem;
+
+    color: #28a745;
+
+}
+
+
+.toast-msg h4 {
+
+    margin: 0;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+}
+
+
+.toast-msg p {
+
+    margin: 4px 0 0;
+
+    color: #d6d6d6;
+
+    font-size: .95rem;
+
+}
+
+
+
+::selection {
+
+    background: #d32f2f;
+
+    color: #ffffff;
+
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 991px) {
+
+
+    .hero h1 {
+
+        font-size: 4rem;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 1rem;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .service,
+    .service.reverse {
+
+        flex-direction: column;
+
+    }
+
+
+    .service img {
+
+        width: 100%;
+
+        height: 300px;
+
+    }
+
+
+    .service-info {
+
+        width: 100%;
+
+        padding: 35px;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 576px) {
+
+
+    .logo {
+
+        font-size: 1.4rem;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+}
