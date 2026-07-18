@@ -72,7 +72,7 @@ git clone https://github.com/maykonscheffer/scheffers-bike.git
 **Maykon Scheffer**
 
 - GitHub: https://github.com/maykonscheffer
-- LinkedIn: *(adicione o link do seu perfil aqui)*
+- LinkedIn: https://www.linkedin.com/in/maykonscheffer/
 
 ---
 
